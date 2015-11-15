@@ -1,0 +1,78 @@
+extends layout
+
+block content
+	.main.header
+		.container
+			.row.centered
+				.col-md-6.w
+					h1.logo
+						| Hola soy Pedro
+						span.color .
+					h2 
+						| www.jinglero.com
+					p
+						| Soy Ingeniero en Informática, Analista de Producto Vuelos en Despegar, Fotográfo amateur, Ciclista afisionado y Futbolista sin mucho talento. Por sobre todo, Argentino.
+			.row.centered
+				.col-md-12.w
+					a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/twitter'});", title='Twitter', href='http://twitter.com/Jinglero')
+						i.fa.fa-twitter
+					a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/facebook'});", title='Facebook', href='https://facebook.com/Jinglero')
+						i.fa.fa-facebook
+					a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/linkedin'});", title='Linkedin', href='http://ar.linkedin.com/in/pedrofedericogarcia')
+						i.fa.fa-linkedin
+					//a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/instagram'});", title='Instagram', href='http://instagram.com/jinglero')
+						i.fa.fa-instagram
+					a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/flickr'});", title='Flickr', href='https://www.flickr.com/photos/Jinglero')
+						i.fa.fa-flickr
+					// <a class="sociallink" target="_blank" onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/behance'});" title="Behance" href="https://www.behance.net/PeterGarcia"><i class="fa fa-behance"></i></a>
+					a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/google-plus'});", title='Google', href='https://plus.google.com/+PedroFedericoGarcía')
+						i.fa.fa-google-plus
+	section#about-me.content
+		.container
+			.row.w.first
+				.col-md-8.col-md-offset-2.centered
+					.col-md-12
+						h1.logo
+							| Pedro García
+							span.color .
+						p
+							| Me recibí de Ingeniero en Informática en 2015, en la 
+							a(href='http://www.palermo.edu', target='_blank') Universidad de Palermo
+							| . Trabaje en varias Agencias de Publicidad Online, como Desarrollador, Project Leader, Project Manager y Product Architect. Hoy, soy Analista del Producto Vuelos en 
+							a(href='http://www.despegar.com/?ref=jinglero', target='_blank') Despegar.com
+							| . Trabajo en ese fantastico limbo entre lo técnico, la usabilidad y el diseño.
+					.col-md-5.col-xs-4.img.w
+						img.avatar(src='/images/me_paz.jpg')
+					.col-md-7.col-xs-8.w.text
+						p
+							| Entre mis hobbies tengo la 
+							a(href='https://www.flickr.com/photos/Jinglero', target='_blank') fotografía
+							| y mi bicicleta. Soy un interesado en Management, Internet, UX, Arquitectura de información, programación y diseño. Estoy continuamente buscando aprender cosas nuevas y emprender nuevos desafios. 
+							| Si crees que puedo ayudarte en tu proyecto o simplemente queres tomar unas cervezas, me podes contactar por
+							a.sociallink(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/twitter'});", title='Twitter', href='http://twitter.com/Jinglero')
+								| Twitter
+							//| o 
+							//a(href='http://blog.jinglero.com/contacto') escribirme
+	.parallax
+		.container
+			.col-md-10.col-md-offset-1
+				p.phrase "Nada se compara como el simple placer de pedalear"
+	section#photos.content
+		.container
+			.row.w
+				.col-md-8.col-md-offset-2
+					h2
+						| Fotos
+						span.color .
+					p Acá dejo algunas de mis fotos favoritas. Podes ver más en mi galería de 
+						a(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/flickr'});", title='Flickr', href='https://www.flickr.com/photos/Jinglero')
+							| Flickr.
+					.row.w.list
+						.col-md-12
+								a(href='https://www.flickr.com/photos/jinglero/16768006130/in/album-72157654254427608/' title='Monumento al caminante distraido')
+									img(src='/images/img1.jpg' alt='Monumento al caminante distraido' style='margin-bottom:50px;')
+								a(href='https://www.flickr.com/photos/jinglero/17075850202/in/album-72157654254427608/' title='Chaltén | Fitz Roy')
+									img(src='/images/img2.jpg' alt='Chaltén | Fitz Roy')
+						.col-md-12.see-more
+							a(target='_blank', onclick="ga('send', 'event', 'social_link', 'click', {'page': '/social/flickr'});", title='Flickr', href='https://www.flickr.com/photos/Jinglero') Ver más fotos >
+	

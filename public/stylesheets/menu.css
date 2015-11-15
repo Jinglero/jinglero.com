@@ -1,0 +1,78 @@
+/**
+ * menu.css
+ * Author: Pedro García;
+ */
+.burger-menu-icon{
+	position: absolute;
+    right: 22px;
+    top: 11px;
+    font-size: 1.5em;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.slideout-menu {
+  position: fixed;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+#menu{
+	color: #fff;
+	padding-top: 70px;
+	background: #333;
+	z-index: 0;
+}
+#menu h3{
+	padding-left: 20px;
+	font-size: 0.8em;
+	opacity: 0.75;
+}
+#menu .umenu-list li{
+    padding: 10px 20px;
+}
+#menu .umenu-list a{
+	color:	#fff;
+}
+#menu .umenu-list a, #menu .umenu-list i{
+	font-size: 1.1em;
+	padding:0px;
+}
+#menu .is-active{
+	border-left: 3px solid #1abc9c;
+	padding-left: 17px;
+}
+#menu .is-active a{
+	color: #1abc9c;
+}
+#menu .umenu-list a:hover{
+	color: #1abc9c;
+}
+#menu .is-active a:hover{
+	color: #fff;
+}
+#menu .umenu-list i{
+	width: 25px;
+	padding-right: 10px; 
+}
